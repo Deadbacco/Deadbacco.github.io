@@ -1,52 +1,100 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Benim Portföyüm</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #111827;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
+  <title>Muhammet Berati Kılıç</title>
 
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      padding: 24px;
-    }
+  <meta
+    name="description"
+    content="Muhammet Berati Kılıç kişisel web sitesi: öz geçmiş, akademik çalışmalar, akademik olmayan çalışmalar ve sanat."
+  />
 
-    .fish-gif {
-      width: 260px;
-      max-width: 80vw;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.6);
-    }
-
-    /* Küçük ekranlarda başlığı biraz küçült */
-    @media (max-width: 420px) {
-      h1 { font-size: 1.4rem; }
-    }
-  </style>
+  css/style.css
 </head>
+
 <body>
-  <div class="container">
-    <h1>Merhaba, sitem yayında!</h1>
+  <header class="site-header">
+    <section class="wall-section" id="wallSection">
+      <div class="wall-image-wrapper" id="wallToggle">
+        images/wall.png
 
-    <img src="images/fish.gif" alt="Balık GIF" class="fish-gif" loading="lazy">
+        <div class="profile-card">
+          images/profile.png
 
-    <p>Bu site GitHub Pages üzerinde çalışıyor. Çok yakında dümdüz yazı görmenin ötesine geçeceğiz.</p>
-  </div>
+          <div class="profile-text">
+            <h1>Muhammet Berati Kılıç</h1>
+            <p>Aerospace Engineer</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wall-description" id="wallDescription">
+        <p>
+          Bu alan, üstteki görselin açıldığında görünecek kısa anlatısı için
+          ayrıldı. Buraya daha sonra görselin anlamını, hikâyesini veya sitenin
+          genel atmosferini anlatan kısa bir metin ekleyebiliriz.
+        </p>
+      </div>
+    </section>
+  </header>
+
+  <main class="main-content">
+    <section class="bio-section">
+      <h2>Kısa Biyografi</h2>
+
+      <p>
+        Havacılık ve uzay mühendisliği, aerodinamik, hesaplamalı akışkanlar
+        dinamiği, akademik üretim, bağımsız projeler ve sanatla ilgilenen bir
+        mühendislik ve üretim alanı.
+      </p>
+    </section>
+
+    <section class="navigation-section" aria-label="Site bölümleri">
+      cv.html
+        <img
+     d-cv.png
+
+        <div class="navigation-card-content">
+          <h2>Öz Geçmiş</h2>
+          <p>Eğitim, deneyim, yetenekler ve projeler.</p>
+        </div>
+      </a>
+
+      academic.html
+        images/card-academic.png
+
+        <div class="navigation-card-content">
+          <h2>Akademik Çalışmalar</h2>
+          <p>Yayınlar, bildiriler, raporlar ve indirilebilir belgeler.</p>
+        </div>
+      </a>
+
+      nonacademic.html
+        images/card-nonacademic.png
+
+        <div class="navigation-card-content">
+          <h2>Akademik Olmayan Çalışmalar</h2>
+          <p>Bağımsız projeler, üretimler ve ilgili dosyalar.</p>
+        </div>
+      </a>
+
+      art.html
+        images/card-art.png
+
+        <div class="navigation-card-content">
+          <h2>Sanat</h2>
+          <p>Resimler, açıklamalar ve ilgili belgeler.</p>
+        </div>
+      </a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Muhammet Berati Kılıç</p>
+  </footer>
+
+  js/app.jsscript>
 </body>
 </html>
