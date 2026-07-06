@@ -3,102 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Muhammet Berati Kılıç</title>
-
-  <meta
-    name="description"
-    content="Muhammet Berati Kılıç kişisel web sitesi: öz geçmiş, akademik çalışmalar, akademik olmayan çalışmalar ve sanat."
-  />
-
-  css/style.css
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
-  <header class="site-header">
-    <section class="wall-section" id="wallSection">
-      <button
-        class="wall-image-wrapper"
-        id="wallToggle"
-        type="button"
-        aria-label="Wall görselini aç veya kapat"
-      >
-        images/wall.png
 
-        <div class="profile-card">
-          images/profile.png
+  <!-- NAVIGATION -->
+  <nav class="site-nav">
+    <div class="container">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="cv.html">Öz Geçmiş</a>
+      <a href="academic.html">Akademik Çalışmalar</a>
+      <a href="nonacademic.html">Akademik Olmayan Çalışmalar</a>
+      <a href="art.html">Sanat</a>
+    </div>
+  </nav>
 
-          <div class="profile-text">
-            <h1>Muhammet Berati Kılıç</h1>
-            <p>Aerospace Engineer</p>
-          </div>
+  <!-- WALL IMAGE -->
+  <section class="wall-section" id="wall-section" title="Genişletmek için tıklayın">
+    <img
+      class="wall-img"
+      src="images/wall.png"
+      alt="Wall"
+    />
+    <span class="wall-hint">— tıklayın —</span>
+    <span class="wall-info">İNFO</span>
+  </section>
+
+  <!-- PROFILE -->
+  <section class="profile-section">
+    <div class="container">
+      <div class="profile-inner">
+        <img
+          class="profile-avatar"
+          src="images/profile.png"
+          alt="Muhammet Berati Kılıç"
+        />
+        <div class="profile-text">
+          <h1 class="profile-name">Muhammet Berati Kılıç</h1>
+          <p class="profile-role">Aerospace Engineer</p>
         </div>
-      </button>
-
-      <div class="wall-description" id="wallDescription">
-        <p>
-          Bu alan, üstteki görselin açıldığında görünecek kısa anlatısı için
-          ayrıldı. Buraya daha sonra görselin anlamını, hikâyesini veya sitenin
-          genel atmosferini anlatan kısa bir metin ekleyebiliriz.
-        </p>
       </div>
-    </section>
-  </header>
+    </div>
+  </section>
 
-  <main class="main-content">
-    <section class="bio-section">
-      <h2>Kısa Biyografi</h2>
-
-      <p>
-        Havacılık ve uzay mühendisliği, aerodinamik, hesaplamalı akışkanlar
-        dinamiği, akademik üretim, bağımsız projeler ve sanatla ilgilenen bir
-        mühendislik ve üretim alanı.
+  <!-- BIO -->
+  <section class="bio-section">
+    <div class="container">
+      <p class="bio-text">
+        Hesaplamalı akışkanlar dinamiği ve aerodinamik analiz alanlarına güçlü bir ilgi duyan havacılık
+        mühendisi ve yüksek lisans öğrencisi. Teknik bilgi, problem çözme becerisi ve iş birliği odaklı
+        yaklaşımıyla yenilikçi mühendislik projelerine katkı sunmayı hedeflemektedir.
       </p>
-    </section>
+    </div>
+  </section>
 
-    <section class="navigation-section" aria-label="Site bölümleri">
-      cv.html
-        images/card-cv.png
+  <!-- HOME CARDS -->
+  <section class="home-cards">
+    <div class="container">
+      <div class="home-cards-grid">
 
-        <div class="navigation-card-content">
-          <h2>Öz Geçmiş</h2>
-          <p>Eğitim, deneyim, yetenekler ve projeler.</p>
-        </div>
-      </a>
+        <!-- Card: Öz Geçmiş -->
+        <a href="cv.html" class="home-card card-cv">
+          <span class="home-card-title">Öz Geçmiş</span>
+          <div class="home-card-img-wrap">
+            <img src="images/card-cv.png" alt="Öz Geçmiş" />
+          </div>
+        </a>
 
-      academic.html
-        images/card-academic.png
+        <!-- Card: Akademik Çalışmalar -->
+        <a href="academic.html" class="home-card card-academic">
+          <span class="home-card-title">Akademik Çalışmalar</span>
+          <div class="home-card-img-wrap">
+            <img src="images/card-academic.png" alt="Akademik Çalışmalar" />
+          </div>
+        </a>
 
-        <div class="navigation-card-content">
-          <h2>Akademik Çalışmalar</h2>
-          <p>Yayınlar, bildiriler, raporlar ve indirilebilir belgeler.</p>
-        </div>
-      </a>
+        <!-- Card: Akademik Olmayan Çalışmalar -->
+        <a href="nonacademic.html" class="home-card card-nonacademic">
+          <span class="home-card-title">Akademik Olmayan Çalışmalar</span>
+          <div class="home-card-img-wrap">
+            <img src="images/card-nonacademic.png" alt="Akademik Olmayan Çalışmalar" />
+          </div>
+        </a>
 
-      nonacademic.html
-        images/card-nonacademic.png
+        <!-- Card: Sanat -->
+        <a href="art.html" class="home-card card-art">
+          <span class="home-card-title">Sanat</span>
+          <div class="home-card-img-wrap">
+            <img src="images/card-art.png" alt="Sanat" />
+          </div>
+        </a>
 
-        <div class="navigation-card-content">
-          <h2>Akademik Olmayan Çalışmalar</h2>
-          <p>Bağımsız projeler, üretimler ve ilgili dosyalar.</p>
-        </div>
-      </a>
+      </div>
+    </div>
+  </section>
 
-      art.html
-        images/card-art.png
-
-        <div class="navigation-card-content">
-          <h2>Sanat</h2>
-          <p>Resimler, açıklamalar ve ilgili belgeler.</p>
-        </div>
-      </a>
-    </section>
-  </main>
-
+  <!-- FOOTER -->
   <footer class="site-footer">
-    <p>© 2026 Muhammet Berati Kılıç</p>
+    <p>&copy; 2025 Muhammet Berati Kılıç &mdash; <a href="mailto:mberati@outlook.com">mberati@outlook.com</a></p>
   </footer>
 
-  js/app.jsscript>
+  <script src="js/app.js"></script>
 </body>
 </html>
