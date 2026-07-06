@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akademik Çalışmalar — Muhammet Berati Kılıç</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav">
+    <div class="container">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="cv.html">Öz Geçmiş</a>
+      <a href="academic.html">Akademik Çalışmalar</a>
+      <a href="nonacademic.html">Akademik Olmayan Çalışmalar</a>
+      <a href="art.html">Sanat</a>
+    </div>
+  </nav>
+
+  <main class="academic-page">
+    <div class="container">
+
+      <!-- PAGE HEADER -->
+      <div class="page-header">
+        <h1>Akademik Çalışmalar</h1>
+        <p>
+          Havacılık ve uzay mühendisliği alanında yürütülen araştırma çalışmaları, bildiriler ve raporlar.
+          Tüm belgeler, aksi belirtilmedikçe Creative Commons lisansı altında paylaşılmaktadır.
+        </p>
+      </div>
+
+      <!-- LICENSE BADGE -->
+      <div class="license-badge">
+        <span class="cc-label">CC BY 4.0</span>
+        <span>
+          Bu sayfadaki içerikler, aksi belirtilmedikçe
+          <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">
+            Creative Commons Attribution 4.0 International
+          </a>
+          lisansı kapsamında paylaşılmaktadır.
+        </span>
+      </div>
+
+      <!-- ================================================================
+           AKADEMİK BELGE KARTLARI
+           ================================================================
+           Yeni bir belge eklemek için aşağıdaki bloğu kopyala ve düzenle.
+           ================================================================ -->
+
+      <!-- Yeni akademik belge kartı eklemek için bu bloğu kopyala ve düzenle -->
+      <div class="doc-card">
+        <!-- Preview alanı: data-pdf = PDF dosya yolu, data-title = Modal başlığı -->
+        <div
+          class="doc-card-preview"
+          data-pdf="documents/academic/example-paper.pdf"
+          data-title="Flapless Aircraft Control Via Curved Surface Jet Blowing"
+          title="Önizleme için tıklayın"
+        >
+          <!-- PDF ilk sayfası iframe ile gösterilir; tarayıcı desteklemezse gri alan kalır -->
+          <iframe
+            src="documents/academic/example-paper.pdf#toolbar=0&navpanes=0&scrollbar=0&page=1"
+            title="PDF Önizleme"
+            loading="lazy"
+          ></iframe>
+          <div class="preview-overlay">
+            <span class="preview-overlay-text">Tam Görünüm</span>
+          </div>
+        </div>
+
+        <div class="doc-card-body">
+          <h2 class="doc-card-title">
+            Flapless Aircraft Control Via Curved Surface Jet Blowing
+          </h2>
+          <p class="doc-card-desc">
+            LIFTUP 2024–2025 kapsamında hazırlanan bu çalışma, kanat kapağı (flap) kullanmadan hava
+            aracı kontrolünün eğimli yüzey jet üfleme yöntemiyle sağlanmasını incelemektedir.
+            13. Ankara Uluslararası Havacılık Konferansı'nda (AIAC) sunulmuş ve LIFTUP Proceedings'de
+            yayımlanmıştır.
+          </p>
+          <div class="btn-group">
+            <a
+              href="documents/academic/example-paper.pdf"
+              download
+              class="btn btn-primary btn-sm"
+            >
+              &#8595; İndir (PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /Yeni akademik belge kartı eklemek için bu bloğu kopyala ve düzenle -->
+
+
+      <!-- ================================================================
+           ÖRNEK — ikinci belge kartı (kopyala & düzenle şablonu)
+           ================================================================
+      <div class="doc-card">
+        <div
+          class="doc-card-preview"
+          data-pdf="documents/academic/example-report.pdf"
+          data-title="Belge Başlığı"
+          title="Önizleme için tıklayın"
+        >
+          <iframe
+            src="documents/academic/example-report.pdf#toolbar=0&navpanes=0&scrollbar=0&page=1"
+            title="PDF Önizleme"
+            loading="lazy"
+          ></iframe>
+          <div class="preview-overlay">
+            <span class="preview-overlay-text">Tam Görünüm</span>
+          </div>
+        </div>
+        <div class="doc-card-body">
+          <h2 class="doc-card-title">Belge Başlığı</h2>
+          <p class="doc-card-desc">
+            Belge kısa açıklaması buraya gelecek.
+          </p>
+          <div class="btn-group">
+            <a href="documents/academic/example-report.pdf" download class="btn btn-primary btn-sm">
+              &#8595; İndir (PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+      -->
+
+    </div>
+  </main>
+
+  <!-- PDF MODAL -->
+  <div class="modal-overlay" id="pdf-modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <div class="modal-header">
+        <span class="modal-title" id="pdf-modal-title">Belge</span>
+        <button class="modal-close" id="pdf-modal-close" aria-label="Kapat">&times;</button>
+      </div>
+      <div class="modal-body">
+        <iframe id="pdf-modal-iframe" title="PDF Görüntüleyici"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Muhammet Berati Kılıç &mdash; <a href="mailto:mberati@outlook.com">mberati@outlook.com</a></p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
