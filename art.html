@@ -8,31 +8,27 @@
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="site-nav">
+  <!-- ANA SAYFA BUTONU -->
+  <div class="back-home">
     <div class="container">
-      <a href="index.html">Ana Sayfa</a>
-      <a href="cv.html">Öz Geçmiş</a>
-      <a href="academic.html">Akademik Çalışmalar</a>
-      <a href="nonacademic.html">Akademik Olmayan Çalışmalar</a>
-      <a href="art.html">Sanat</a>
+      <a href="index.html">&#8592; Ana Sayfa</a>
     </div>
-  </nav>
+  </div>
 
   <main class="art-page">
     <div class="container">
 
-      <!-- PAGE HEADER -->
+      <!-- BAŞLIK -->
       <div class="page-header">
         <h1>Sanat</h1>
         <p>
-          Görsel sanat çalışmaları, resimler ve yaratıcı projeler. Her eser için sunum ve
-          süreç günlüğü belgeleri indirilebilir. Tüm içerikler, aksi belirtilmedikçe
-          Creative Commons lisansı altında paylaşılmaktadır.
+          Resim ağırlıklı olmak üzere, yapmış olduğum eserler. Bu eserlerden paylaşacaklarım,
+          öncelikli olarak Sunum ve Süreç Günlüğü'ne sahip olanlar olacak.
+          Belgelemediğim eserleri de eklemeye çalışacağım.
         </p>
       </div>
 
-      <!-- LICENSE BADGE -->
+      <!-- CC LİSANSI -->
       <div class="license-badge">
         <span class="cc-label">CC BY 4.0</span>
         <span>
@@ -47,68 +43,78 @@
       <!-- ================================================================
            SANAT ESERİ GALERİSİ
            ================================================================
-           Yeni bir eser eklemek için aşağıdaki bloğu kopyala ve düzenle.
+
+           YENİ ESER EKLEMEK İÇİN aşağıdaki bloğu kopyala:
+
+           <div class="art-card">
+             <div class="art-card-img" title="Büyütmek için tıklayın">
+               <img src="images/art/GORSEL.png" alt="Eser Adı" />
+               <span class="art-img-hint">Tıklayın</span>
+             </div>
+             <div class="art-card-body">
+               <h2 class="art-card-title">Eser Adı</h2>
+               <p class="art-card-desc">Eser açıklaması.</p>
+               <div class="btn-group">
+                 <a href="documents/art/SUNUM_VE_SUREC_GUNLUGU.pdf" download class="btn btn-primary btn-sm">
+                   &#8595; Sunum ve Süreç Günlüğü'nü İndir
+                 </a>
+               </div>
+             </div>
+           </div>
+
+           Eser görseli : images/art/ klasörü
+           Belge         : documents/art/ klasörü
+
            ================================================================ -->
+
       <div class="art-grid">
 
-        <!-- Yeni sanat eseri eklemek için bu bloğu kopyala ve düzenle -->
+        <!-- ESER 1: Türklerin Babası -->
         <div class="art-card">
-          <!-- Eser görseli: images/art/ klasöründen -->
-          <div class="art-card-img">
+          <!-- Görsele tıklanınca 50vh → 100vh genişler, tekrar tıklanınca döner. -->
+          <div class="art-card-img" title="Büyütmek için tıklayın">
             <img
-              src="images/art/example-artwork.png"
-              alt="Eser Adı"
+              src="images/art/atam.png"
+              alt="Türklerin Babası"
             />
+            <span class="art-img-hint">Tıklayın</span>
           </div>
           <div class="art-card-body">
-            <h2 class="art-card-title">Eser Adı</h2>
+            <h2 class="art-card-title">Türklerin Babası</h2>
             <p class="art-card-desc">
-              Eserin kısa açıklaması buraya gelecek. Teknik, malzeme, ilham kaynağı veya
-              süreç hakkında kısa bir not eklenebilir.
+              Türklerin Babası, Mustafa Kemal Atatürk'ün yapay zekâ aracılığıyla
+              oluşturulmuş bir portresinin reprodüksiyonudur. Bu çalışma, dijital çağın
+              üretim teknikleri ile klasik resim anlayışını bir araya getirerek geçmişin
+              büyük liderini çağdaş bir ifade diliyle yeniden yorumlar.
             </p>
-            <!-- İki indirme butonu: sunum ve süreç günlüğü -->
             <div class="btn-group">
               <a
-                href="documents/art/example-artwork-presentation.pdf"
+                href="documents/art/Türklerin Babası.pdf"
                 download
                 class="btn btn-primary btn-sm"
               >
-                &#8595; Sunum İndir
-              </a>
-              <a
-                href="documents/art/example-artwork-process-diary.pdf"
-                download
-                class="btn btn-outline btn-sm"
-              >
-                &#8595; Süreç Günlüğü İndir
+                &#8595; Sunum ve Süreç Günlüğü'nü İndir
               </a>
             </div>
           </div>
         </div>
-        <!-- /Yeni sanat eseri eklemek için bu bloğu kopyala ve düzenle -->
+        <!-- /ESER 1 -->
 
 
-        <!-- ================================================================
-             ÖRNEK — ikinci eser kartı (kopyala & düzenle şablonu)
-             ================================================================
+        <!-- Yeni eser eklemek için bu bloğu kopyala ve düzenle
         <div class="art-card">
-          <div class="art-card-img">
-            <img
-              src="images/art/example-artwork-2.png"
-              alt="İkinci Eser"
-            />
+          <div class="art-card-img" title="Büyütmek için tıklayın">
+            <img src="images/art/GORSEL.png" alt="Eser Adı" />
+            <span class="art-img-hint">Tıklayın</span>
           </div>
           <div class="art-card-body">
-            <h2 class="art-card-title">İkinci Eser Adı</h2>
+            <h2 class="art-card-title">Eser Adı</h2>
             <p class="art-card-desc">
-              İkinci eserin açıklaması.
+              Eser açıklaması buraya gelecek.
             </p>
             <div class="btn-group">
-              <a href="documents/art/example-artwork-2-presentation.pdf" download class="btn btn-primary btn-sm">
-                &#8595; Sunum İndir
-              </a>
-              <a href="documents/art/example-artwork-2-process-diary.pdf" download class="btn btn-outline btn-sm">
-                &#8595; Süreç Günlüğü İndir
+              <a href="documents/art/SUNUM_VE_SUREC.pdf" download class="btn btn-primary btn-sm">
+                &#8595; Sunum ve Süreç Günlüğü'nü İndir
               </a>
             </div>
           </div>
