@@ -8,30 +8,27 @@
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="site-nav">
+  <!-- ANA SAYFA BUTONU -->
+  <div class="back-home">
     <div class="container">
-      <a href="index.html">Ana Sayfa</a>
-      <a href="cv.html">Öz Geçmiş</a>
-      <a href="academic.html">Akademik Çalışmalar</a>
-      <a href="nonacademic.html">Akademik Olmayan Çalışmalar</a>
-      <a href="art.html">Sanat</a>
+      <a href="index.html">&#8592; Ana Sayfa</a>
     </div>
-  </nav>
+  </div>
 
   <main class="academic-page">
     <div class="container">
 
-      <!-- PAGE HEADER -->
+      <!-- BAŞLIK -->
       <div class="page-header">
         <h1>Akademik Çalışmalar</h1>
         <p>
-          Havacılık ve uzay mühendisliği alanında yürütülen araştırma çalışmaları, bildiriler ve raporlar.
-          Tüm belgeler, aksi belirtilmedikçe Creative Commons lisansı altında paylaşılmaktadır.
+          Eğitim hayatım boyunca yürüttüğüm ve raporladığım araştırma çalışmaları ve projeler.
+          Erişebildiğim belgeleri fırsat buldukça ekleyeceğim.
+          Belgelerle ilgili sorularınız için <a href="mailto:mberati@outlook.com">iletişime</a> geçebilirsiniz.
         </p>
       </div>
 
-      <!-- LICENSE BADGE -->
+      <!-- CC LİSANSI -->
       <div class="license-badge">
         <span class="cc-label">CC BY 4.0</span>
         <span>
@@ -46,21 +43,49 @@
       <!-- ================================================================
            AKADEMİK BELGE KARTLARI
            ================================================================
-           Yeni bir belge eklemek için aşağıdaki bloğu kopyala ve düzenle.
+
+           YENİ AKADEMİK BELGE EKLEMEK İÇİN aşağıdaki bloğu kopyala:
+
+           <div class="doc-card">
+             <div
+               class="doc-card-preview"
+               data-pdf="documents/academic/DOSYA_ADI.pdf"
+               data-title="Modal Başlığı"
+               title="Önizleme için tıklayın"
+             >
+               <iframe
+                 src="documents/academic/DOSYA_ADI.pdf#toolbar=0&navpanes=0&scrollbar=0&page=1"
+                 title="PDF Önizleme"
+                 loading="lazy"
+               ></iframe>
+               <div class="preview-overlay">
+                 <span class="preview-overlay-text">Tam Görünüm</span>
+               </div>
+             </div>
+             <div class="doc-card-body">
+               <h2 class="doc-card-title">Belge Başlığı</h2>
+               <p class="doc-card-desc">Kısa açıklama.</p>
+               <div class="btn-group">
+                 <a href="documents/academic/DOSYA_ADI.pdf" download class="btn btn-primary btn-sm">
+                   &#8595; İndir (PDF)
+                 </a>
+               </div>
+             </div>
+           </div>
+
            ================================================================ -->
 
-      <!-- Yeni akademik belge kartı eklemek için bu bloğu kopyala ve düzenle -->
+      <!-- BELGE 1: AIAC-2025-111 -->
       <div class="doc-card">
-        <!-- Preview alanı: data-pdf = PDF dosya yolu, data-title = Modal başlığı -->
+        <!-- data-pdf: PDF dosya yolu  |  data-title: modal başlığı -->
         <div
           class="doc-card-preview"
-          data-pdf="documents/academic/example-paper.pdf"
+          data-pdf="documents/academic/AIAC-2025-111.pdf"
           data-title="Flapless Aircraft Control Via Curved Surface Jet Blowing"
           title="Önizleme için tıklayın"
         >
-          <!-- PDF ilk sayfası iframe ile gösterilir; tarayıcı desteklemezse gri alan kalır -->
           <iframe
-            src="documents/academic/example-paper.pdf#toolbar=0&navpanes=0&scrollbar=0&page=1"
+            src="documents/academic/AIAC-2025-111.pdf#toolbar=0&navpanes=0&scrollbar=0&page=1"
             title="PDF Önizleme"
             loading="lazy"
           ></iframe>
@@ -74,14 +99,15 @@
             Flapless Aircraft Control Via Curved Surface Jet Blowing
           </h2>
           <p class="doc-card-desc">
-            LIFTUP 2024–2025 kapsamında hazırlanan bu çalışma, kanat kapağı (flap) kullanmadan hava
-            aracı kontrolünün eğimli yüzey jet üfleme yöntemiyle sağlanmasını incelemektedir.
-            13. Ankara Uluslararası Havacılık Konferansı'nda (AIAC) sunulmuş ve LIFTUP Proceedings'de
-            yayımlanmıştır.
+            Kanat kapağı (flap) kullanmadan hava aracı kontrolünün eğimli yüzey jet üfleme
+            yöntemiyle sağlanmasını inceleyen bu çalışma, LIFTUP kapsamında yürütülmüş ve
+            13. Ankara Uluslararası Havacılık ve Uzay Konferansı'nda (AIAC 2025) sunulmuştur.
+            Burada paylaşılan sürüm, IOP Journal of Physics: Conference Series için
+            yeniden formatlanmış halidir.
           </p>
           <div class="btn-group">
             <a
-              href="documents/academic/example-paper.pdf"
+              href="documents/academic/AIAC-2025-111.pdf"
               download
               class="btn btn-primary btn-sm"
             >
@@ -90,21 +116,19 @@
           </div>
         </div>
       </div>
-      <!-- /Yeni akademik belge kartı eklemek için bu bloğu kopyala ve düzenle -->
+      <!-- /BELGE 1 -->
 
 
-      <!-- ================================================================
-           ÖRNEK — ikinci belge kartı (kopyala & düzenle şablonu)
-           ================================================================
+      <!-- Yeni akademik belge eklemek için bu bloğu kopyala ve düzenle
       <div class="doc-card">
         <div
           class="doc-card-preview"
-          data-pdf="documents/academic/example-report.pdf"
-          data-title="Belge Başlığı"
+          data-pdf="documents/academic/DOSYA_ADI.pdf"
+          data-title="Modal Başlığı"
           title="Önizleme için tıklayın"
         >
           <iframe
-            src="documents/academic/example-report.pdf#toolbar=0&navpanes=0&scrollbar=0&page=1"
+            src="documents/academic/DOSYA_ADI.pdf#toolbar=0&navpanes=0&scrollbar=0&page=1"
             title="PDF Önizleme"
             loading="lazy"
           ></iframe>
@@ -115,10 +139,10 @@
         <div class="doc-card-body">
           <h2 class="doc-card-title">Belge Başlığı</h2>
           <p class="doc-card-desc">
-            Belge kısa açıklaması buraya gelecek.
+            Belge açıklaması buraya gelecek.
           </p>
           <div class="btn-group">
-            <a href="documents/academic/example-report.pdf" download class="btn btn-primary btn-sm">
+            <a href="documents/academic/DOSYA_ADI.pdf" download class="btn btn-primary btn-sm">
               &#8595; İndir (PDF)
             </a>
           </div>
