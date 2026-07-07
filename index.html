@@ -8,32 +8,30 @@
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="site-nav">
-    <div class="container">
-      <a href="index.html">Ana Sayfa</a>
-      <a href="cv.html">Öz Geçmiş</a>
-      <a href="academic.html">Akademik Çalışmalar</a>
-      <a href="nonacademic.html">Akademik Olmayan Çalışmalar</a>
-      <a href="art.html">Sanat</a>
-    </div>
-  </nav>
-
-  <!-- WALL IMAGE -->
-  <section class="wall-section" id="wall-section" title="Genişletmek için tıklayın">
+  <!-- WALL IMAGE
+       Tıklandığında tam boyut (contain, ekran yüksekliğine sığdır).
+       Tekrar tıklanınca %30 yüksekliğe döner. -->
+  <section class="wall-section" id="wall-section" title="Resime Tıklayın">
     <img
       class="wall-img"
       src="images/wall.png"
-      alt="Wall"
+      alt="Scherzo #2 Kayboluş"
     />
-    <span class="wall-hint">— tıklayın —</span>
-    <span class="wall-info">İNFO</span>
+    <span class="wall-hint">Resime Tıklayın</span>
+    <span class="wall-info">
+      Scherzo #2 &#8220;Kayboluş&#8221;, Chopin: Scherzo No.&nbsp;2 in B-Flat Minor Op.&nbsp;31
+      eserinden esinlenerek yarattığım bir resim serisinin ikinci parçası.
+    </span>
   </section>
 
-  <!-- PROFILE -->
-  <section class="profile-section">
+  <!-- PROFILE
+       .profile-section normal durumda margin-top: -96px ile wall'a %50 biniştirilir.
+       Wall açıldığında JS wall-open sınıfını ekler; margin sıfırlanır ve profil aşağı kayar.
+       Collapsed: avatar üstte, isim altında (column).
+       Expanded: avatar solda, isim sağda (row) — CSS sibling selector ile. -->
+  <section class="profile-section" id="profile-section">
     <div class="container">
-      <div class="profile-inner">
+      <div class="profile-inner" id="profile-inner">
         <img
           class="profile-avatar"
           src="images/profile.png"
@@ -41,29 +39,31 @@
         />
         <div class="profile-text">
           <h1 class="profile-name">Muhammet Berati Kılıç</h1>
-          <p class="profile-role">Aerospace Engineer</p>
+          <!-- <p class="profile-role">Aerospace Engineer</p> -->
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- BIO -->
-  <section class="bio-section">
-    <div class="container">
       <p class="bio-text">
-        Hesaplamalı akışkanlar dinamiği ve aerodinamik analiz alanlarına güçlü bir ilgi duyan havacılık
-        mühendisi ve yüksek lisans öğrencisi. Teknik bilgi, problem çözme becerisi ve iş birliği odaklı
-        yaklaşımıyla yenilikçi mühendislik projelerine katkı sunmayı hedeflemektedir.
+        Hesaplamalı akışkanlar dinamiği ve aerodinamik analiz alanlarına güçlü bir ilgi duyan
+        havacılık mühendisi ve yüksek lisans öğrencisi. Teknik bilgi, problem çözme becerisi
+        ve iş birliği odaklı yaklaşımıyla yenilikçi mühendislik projelerine katkı sunmayı
+        hedeflemektedir.
       </p>
     </div>
   </section>
 
-  <!-- HOME CARDS -->
+  <!-- HOME CARDS
+       Her kart AR 1:1.25 — başlık üstte, atanan resim başlığın altında sola yaslanmış,
+       tam görünür (kırpılmaz). Resimlerin 1:6 boyut oranı korunur.
+
+       YENİ KART EKLEMEK İÇİN:
+       Aşağıdaki home-card bloklarından birini kopyala, href / class / başlık /
+       img src değerlerini değiştir. -->
   <section class="home-cards">
     <div class="container">
       <div class="home-cards-grid">
 
-        <!-- Card: Öz Geçmiş -->
+        <!-- Kart: Öz Geçmiş -->
         <a href="cv.html" class="home-card card-cv">
           <span class="home-card-title">Öz Geçmiş</span>
           <div class="home-card-img-wrap">
@@ -71,7 +71,7 @@
           </div>
         </a>
 
-        <!-- Card: Akademik Çalışmalar -->
+        <!-- Kart: Akademik Çalışmalar -->
         <a href="academic.html" class="home-card card-academic">
           <span class="home-card-title">Akademik Çalışmalar</span>
           <div class="home-card-img-wrap">
@@ -79,7 +79,7 @@
           </div>
         </a>
 
-        <!-- Card: Akademik Olmayan Çalışmalar -->
+        <!-- Kart: Akademik Olmayan Çalışmalar -->
         <a href="nonacademic.html" class="home-card card-nonacademic">
           <span class="home-card-title">Akademik Olmayan Çalışmalar</span>
           <div class="home-card-img-wrap">
@@ -87,7 +87,7 @@
           </div>
         </a>
 
-        <!-- Card: Sanat -->
+        <!-- Kart: Sanat -->
         <a href="art.html" class="home-card card-art">
           <span class="home-card-title">Sanat</span>
           <div class="home-card-img-wrap">
