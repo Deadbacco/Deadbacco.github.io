@@ -8,30 +8,26 @@
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="site-nav">
+  <!-- ANA SAYFA BUTONU -->
+  <div class="back-home">
     <div class="container">
-      <a href="index.html">Ana Sayfa</a>
-      <a href="cv.html">Öz Geçmiş</a>
-      <a href="academic.html">Akademik Çalışmalar</a>
-      <a href="nonacademic.html">Akademik Olmayan Çalışmalar</a>
-      <a href="art.html">Sanat</a>
+      <a href="index.html">&#8592; Ana Sayfa</a>
     </div>
-  </nav>
+  </div>
 
   <main class="nonacademic-page">
     <div class="container">
 
-      <!-- PAGE HEADER -->
+      <!-- BAŞLIK -->
       <div class="page-header">
         <h1>Akademik Olmayan Çalışmalar</h1>
         <p>
-          Bağımsız projeler, araçlar ve mühendislik dışı çalışmalar.
-          Tüm içerikler, aksi belirtilmedikçe Creative Commons lisansı altında paylaşılmaktadır.
+          Bağımsız projelerim ve ürettiğim araçlar.
+          Fırsat buldukça tüm çalışmalarımı eklemeye çalışacağım.
         </p>
       </div>
 
-      <!-- LICENSE BADGE -->
+      <!-- CC LİSANSI -->
       <div class="license-badge">
         <span class="cc-label">CC BY 4.0</span>
         <span>
@@ -44,67 +40,84 @@
       </div>
 
       <!-- ================================================================
-           AKADEMİK OLMAYAN PROJE KARTLARI
+           PROJE KARTLARI
            ================================================================
-           Yeni bir proje eklemek için aşağıdaki bloğu kopyala ve düzenle.
+
+           YENİ PROJE EKLEMEK İÇİN aşağıdaki bloğu kopyala:
+
+           <div class="project-card">
+             <div class="project-card-img">
+               <img src="images/nonacademic/GORSEL.png" alt="Proje Adı" />
+             </div>
+             <div class="project-card-body">
+               <h2 class="project-card-title">Proje Adı</h2>
+               <p class="project-card-desc">Kısa açıklama.</p>
+               <div class="btn-group">
+                 <a href="documents/nonacademic/DOSYA.pdf" download class="btn btn-primary btn-sm">
+                   &#8595; Dosya Adı
+                 </a>
+                 <a href="files/DOSYA.exe" download class="btn btn-outline btn-sm">
+                   &#8595; Dosya Adı
+                 </a>
+               </div>
+             </div>
+           </div>
+
            ================================================================ -->
 
-      <!-- Yeni akademik olmayan proje eklemek için bu bloğu kopyala ve düzenle -->
+      <!-- PROJE 1: PunkyPlanz -->
       <div class="project-card">
         <!-- Proje görseli: images/nonacademic/ klasöründen -->
         <div class="project-card-img">
           <img
-            src="images/nonacademic/example-project.png"
-            alt="Proje Adı"
+            src="images/nonacademic/punkyplanzlogo.png"
+            alt="PunkyPlanz"
           />
         </div>
 
         <div class="project-card-body">
-          <h2 class="project-card-title">Proje Adı</h2>
+          <h2 class="project-card-title">PunkyPlanz</h2>
           <p class="project-card-desc">
-            Projenin kısa açıklaması buraya gelecek. Projenin amacı, kullanılan yöntemler
-            ve elde edilen sonuçlar birkaç cümle ile özetlenebilir.
+            Windows için plan oluşturma programı.
           </p>
           <!-- İndirme butonları — birden fazla eklenebilir -->
           <div class="btn-group">
             <a
-              href="documents/nonacademic/example-project-file.pdf"
+              href="documents/nonacademic/PunkyPlanz Kullanım kılavuzu.pdf"
               download
               class="btn btn-primary btn-sm"
             >
-              &#8595; Dosya İndir (PDF)
+              &#8595; Kullanım Kılavuzu (PDF)
             </a>
             <a
-              href="documents/nonacademic/example-project-source.zip"
+              href="files/PunkyPlanz Setup 1.0.4.exe"
               download
               class="btn btn-outline btn-sm"
             >
-              &#8595; Kaynak İndir (ZIP)
+              &#8595; Kurulum Dosyası (EXE)
             </a>
           </div>
         </div>
       </div>
-      <!-- /Yeni akademik olmayan proje eklemek için bu bloğu kopyala ve düzenle -->
+      <!-- /PROJE 1 -->
 
 
-      <!-- ================================================================
-           ÖRNEK — ikinci proje kartı (kopyala & düzenle şablonu)
-           ================================================================
+      <!-- Yeni proje eklemek için bu bloğu kopyala ve düzenle
       <div class="project-card">
         <div class="project-card-img">
-          <img
-            src="images/nonacademic/example-project-2.png"
-            alt="İkinci Proje"
-          />
+          <img src="images/nonacademic/GORSEL.png" alt="Proje Adı" />
         </div>
         <div class="project-card-body">
-          <h2 class="project-card-title">İkinci Proje Adı</h2>
+          <h2 class="project-card-title">Proje Adı</h2>
           <p class="project-card-desc">
-            İkinci projenin açıklaması.
+            Proje açıklaması buraya gelecek.
           </p>
           <div class="btn-group">
-            <a href="documents/nonacademic/example-project-2.pdf" download class="btn btn-primary btn-sm">
-              &#8595; İndir (PDF)
+            <a href="documents/nonacademic/DOSYA.pdf" download class="btn btn-primary btn-sm">
+              &#8595; Belge İndir (PDF)
+            </a>
+            <a href="files/DOSYA.exe" download class="btn btn-outline btn-sm">
+              &#8595; Kurulum Dosyası
             </a>
           </div>
         </div>
