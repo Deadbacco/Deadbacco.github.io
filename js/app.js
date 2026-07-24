@@ -29,6 +29,17 @@
    ----------------------------------------------------------------- */
 (function initArtExpand() {
   document.querySelectorAll('.art-card-img').forEach(function (el) {
+    var img = el.querySelector('img');
+
+    // Yatay (landscape) resimleri tespit et — ayrı boyutlandırma uygulanır.
+    function classify() {
+      if (img.naturalWidth > img.naturalHeight) {
+        el.classList.add('is-landscape');
+      }
+    }
+    if (img.complete) classify();
+    else img.addEventListener('load', classify);
+
     el.addEventListener('click', function () {
       this.classList.toggle('expanded');
     });

@@ -13,10 +13,10 @@
   --color-accent:      #8b1a1a;
 
   /* Card accent colors */
-  --card-cv:           #0D2C54;
-  --card-academic:     #0AB6FF;
-  --card-nonacademic:  #7F1019;
-  --card-art:          #33C1B1;
+  --card-cv:           #7a1010;
+  --card-academic:     #d4848a;
+  --card-nonacademic:  #3e3e32;
+  --card-art:          #6b7a1a;
 
   --color-success:     #2e7d5e;
   --color-warning:     #b87333;
@@ -710,10 +710,24 @@ img { display: block; max-width: 100%; }
   height: 100vh;
 }
 
-.art-card-img.expanded img {
+/* Yatay (landscape) resimler:
+   kapalıyken sadece üst ~60%'i görünsün, açılınca yana genişleyip tamamı görünsün. */
+.art-card-img.is-landscape {
+  height: 30vh;
+}
+.art-card-img.is-landscape.expanded {
+  height: auto;
+  max-height: 100vh;
+}
+.art-card-img.is-landscape img {
+  object-fit: cover;
+  object-position: center top;
+}
+.art-card-img.is-landscape.expanded img {
+  height: auto;
+  max-height: 100vh;
   object-fit: contain;
 }
-
 
 .art-card-img img {
   width: 100%;
