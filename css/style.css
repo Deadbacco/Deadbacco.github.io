@@ -716,8 +716,15 @@ img { display: block; max-width: 100%; }
   height: 30vh;
 }
 .art-card-img.is-landscape.expanded {
-  height: auto;
+  height: var(--expanded-height, 60vh);
   max-height: 100vh;
+}
+
+.art-card-img.is-landscape.expanded img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
 }
 .art-card-img.is-landscape img {
   object-fit: cover;
