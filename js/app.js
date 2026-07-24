@@ -30,22 +30,40 @@
 (function initArtExpand() {
   document.querySelectorAll('.art-card-img').forEach(function (el) {
     var img = el.querySelector('img');
+    if (!img) return;
 
-    // Yatay (landscape) resimleri tespit et — ayrı boyutlandırma uygulanır.
-    function classify() {
-      if (img.naturalWidth > img.naturalHeight) {
+    function setupImage() {
+      var isLandscape = img.naturalWidth > img.naturalHeight;
+
+      if (isLandscape) {
         el.classList.add('is-landscape');
       }
+
+      var cardWidth = el.clientWidth;
+      var ratioHeight = cardWidth * (img.naturalHeight / img.naturalWidth);
+      var expandedHeight = Math.min(window.innerHeight, ratioHeight);
+
+      el.style.setProperty('--expanded-height', expandedHeight + 'px');
     }
-    if (img.complete) classify();
-    else img.addEventListener('load', classify);
+
+    if (img.complete) {
+      setupImage();
+    } else {
+      img.addEventListener('load', setupImage);
+    }
 
     el.addEventListener('click', function () {
-      this.classList.toggle('expanded');
+      setupImage();
+      el.classList.toggle('expanded');
+    });
+
+    window.addEventListener('resize', function () {
+      if (el.classList.contains('expanded')) {
+        setupImage();
+      }
     });
   });
 })();
-
 
 /* -----------------------------------------------------------------
    PDF MODAL (academic.html)
